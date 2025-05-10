@@ -1,0 +1,13 @@
+[package]
+name = "server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bevy = { version = "0.15", default-features = false }
+bevy_quinnet = "0.13.0"
+boyar_tournament = { path = "../boyar_tournament" }
+common = { path = "../common" }
+
+[lints]
+workspace = true

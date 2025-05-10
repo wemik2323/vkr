@@ -1,0 +1,63 @@
+[package]
+name = "boyar_tournament"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+bevy = { version = "0.15.0", default-features = false, features = [
+    "bevy_dev_tools",
+    "animation",
+    "bevy_asset",
+    "bevy_audio",
+    "bevy_color",
+    "bevy_core_pipeline",
+    "bevy_gilrs",
+    "bevy_gizmos",
+    "bevy_gltf",
+    "bevy_mesh_picking_backend",
+    "bevy_pbr",
+    "bevy_picking",
+    "bevy_render",
+    "bevy_scene",
+    "bevy_sprite",
+    "bevy_sprite_picking_backend",
+    "bevy_state",
+    "bevy_text",
+    "bevy_ui",
+    "bevy_ui_picking_backend",
+    "bevy_window",
+    "bevy_winit",
+    "custom_cursor",
+    "default_font",
+    "hdr",
+    "multi_threaded",
+    "png",
+    "smaa_luts",
+    "sysinfo_plugin",
+    "tonemapping_luts",
+    "vorbis",
+    "webgl2",
+    "x11",
+] }
+bevy-inspector-egui = "0.28.0"
+bevy_aseprite_ultra = "0.4.0"
+bevy_asset_loader = "0.22.0"
+log = { version = "0.4.22", features = [
+    "max_level_debug",
+    "release_max_level_warn",
+] }
+common = { path = "../common" }
+bevy_quinnet = "0.13.0"
+rand = "0.8.5"
+
+[lints]
+workspace = true
+
+[features]
+dev = [
+    "bevy/dynamic_linking",
+    "bevy/bevy_dev_tools",
+    "bevy/file_watcher",
+    "bevy/embedded_watcher",
+]

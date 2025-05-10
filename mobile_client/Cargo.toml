@@ -1,0 +1,38 @@
+[package]
+name = "mobile_client"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+name = "mobile_client"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+boyar_tournament = { path = "../boyar_tournament" }
+bevy = { version = "0.15", default-features = false, features = [
+    "android-native-activity",
+] }
+
+[lints]
+workspace = true
+
+[package.metadata.android]
+package = "valetoriy.boyar_tournament"
+apk_name = "BoyarTournament"
+assets = "../assets"
+strip = "strip"
+resources = "../assets/icons/android/"
+build_targets = ["aarch64-linux-android"]
+
+[package.metadata.android.sdk]
+target_sdk_version = 35
+
+[package.metadata.android.application]
+icon = "@mipmap/android_icon"
+label = "Boyar Tournament"
+theme = "@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+
+[package.metadata.android.signing.release]
+path = "release.keystore"
+keystore_password = "android"
