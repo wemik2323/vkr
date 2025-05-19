@@ -7,10 +7,10 @@ use bevy::{math::vec2, prelude::*};
 use bevy_quinnet::shared::channels::{ChannelId, ChannelType, ChannelsConfiguration};
 use serde::{Deserialize, Serialize};
 
-//pub const SERVER_HOST: Ipv4Addr = Ipv4Addr::LOCALHOST;
-pub const SERVER_HOST: Ipv4Addr = Ipv4Addr::new(79, 99, 49, 34);
+//pub const SERVER_HOST: Ipv4Addr = Ipv4Addr::new(178, 71, 57, 127);
+pub const SERVER_HOST: Ipv4Addr = Ipv4Addr::LOCALHOST;
 pub const LOCAL_BIND_IP: Ipv4Addr = Ipv4Addr::UNSPECIFIED;
-pub const SERVER_PORT: u16 = 42069;
+pub const SERVER_PORT: u16 = 50505;
 
 #[derive(
     Debug,
