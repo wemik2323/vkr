@@ -1,0 +1,8 @@
+shell-команды
+    https://github.com/edouardpoitras/bevy_local_commands
+
+Физика игры
+    https://github.com/Jondolf/avian
+
+Виджет для ввода текста
+    https://github.com/rparrett/bevy_simple_text_input
